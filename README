@@ -1,0 +1,16 @@
+Brian Wichers
+bwichers@ucsc.edu
+Matthew Wang
+majwang@ucsc.edu
+
+usage: type "make" to compile and run the program or type ./test to run it from the executable. 
+For some reason though, you have to make a move after pressing X on the window to exit the window or type Ctrl+C.
+When prompted, type coordinates as x[space]y. Coordinates run from 1-11, and run y then x(not the usual x and then y). The AI(BLUE) will always go first.
+
+In this assignment, we used GLUT to run our game with a GUI and displayed the players as different colors(red for player, blue for AI). 
+Red player will try to connect the top of the board to the bottom of the board, while the blue AI will try to connect the left of the board to the right.
+We used a simplified faster version of our dijkstra's algorithm from the previous assignment to just find a path for determining winners, and implemented 
+the Monte Carlo algorithm to run AI simulations, using 1000 simulations for each AI move. We used a connectivity matrix for checking for adjacent
+pieces for our path finding algorithm. Our GUI is made using 6 verticies for a hex and printing 121 hexes in pattern on the board(total of 726 vertices). 
+Our program translates coords like 1 11 into positions of hex shaped polygons and fills in the created hex as a color.
+ 
